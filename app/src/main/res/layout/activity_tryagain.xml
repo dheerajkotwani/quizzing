@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tryagain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trya"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/oops"
+        android:scaleType="fitCenter"
+        />
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Try Again"
+        android:textSize="30sp"
+        android:onClick="tryag"
+        android:background="@drawable/backgrnd1"
+        android:layout_centerVertical="true"
+        android:layout_margin="40dp"
+        android:alpha="0.8"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/but2"
+        android:layout_below="@+id/but1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:onClick="exit"
+        android:background="@drawable/backgrnd2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textSize="25sp"
+        android:alpha="0.8"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

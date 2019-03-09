@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ques4">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/tube"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/ques"
+        android:layout_margin="15dp"
+        android:text="Who is the C.E.O. of Youtube?"
+        android:textColor="#fff"
+        android:padding="25dp"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:alpha="0.9"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <Button
+            android:onClick="correct"
+            android:id="@+id/optiona"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:background="@drawable/optiona"
+            android:text="Susan Wojcicki"
+            android:textColor="#f0f000"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:padding="15dp"
+            android:alpha="0.7"
+            android:typeface="serif"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_below="@+id/optiona"
+            android:onClick="incorrect"
+            android:id="@+id/optionb"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:background="@drawable/optionb"
+            android:text="Sergey Brin"
+            android:textColor="#f0f000"
+            android:layout_margin="5dp"
+
+            android:alpha="0.7"
+            android:textAlignment="textEnd"
+            android:padding="15dp"
+            android:typeface="serif"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_below="@+id/optionb"
+            android:id="@+id/optionc"
+            android:layout_height="50dp"
+            android:layout_width="300dp"
+            android:background="@drawable/optiona"
+            android:text="Jamie Dimon"
+            android:onClick="incorrect"
+            android:alpha="0.7"
+            android:textColor="#f0f000"
+            android:layout_margin="5dp"
+            android:textAlignment="textStart"
+            android:padding="15dp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_below="@+id/optionc"
+            android:id="@+id/optiond"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="300dp"
+            android:background="@drawable/optionb"
+            android:text="Richard Branson"
+            android:onClick="incorrect"
+            android:alpha="0.7"
+            android:textColor="#f0f000"
+            android:layout_margin="5dp"
+            android:textAlignment="textEnd"
+            android:padding="15dp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
